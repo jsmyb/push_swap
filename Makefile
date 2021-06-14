@@ -19,6 +19,11 @@ SRC_SORTER =	./src/sorter/looper.c \
 OBJS_COMMON	= ${SRC_COMMON:.c=.o}
 OBJS_SORTER		= ${SRC_SORTER:.c=.o}
 
+
+GREEN		= \033[0;32m
+RED			= \033[0;31m
+RESET		= \033[0;0m
+
 INCLUDE = ./src/include
 
 CFLAGS = -Wall -Wextra -Werror
@@ -35,12 +40,14 @@ all: ${NAME}
 
 $(NAME): $(OBJS_COMMON) $(OBJS_SORTER)
 			${CC} $(CFLAGS) -I$(INCLUDE) -o $(NAME) $(OBJS_COMMON) $(OBJS_SORTER)
+			@echo "$(GREEN) $@	done! $(RESET)"
 
 clean:
 			${RM} ${OBJS_COMMON} ${OBJS_SORTER}
 
 fclean: clean
 			${RM} ${NAME} ${NAME_CHECKER}
+			@echo "$(RED) deleted! $(RESET)"
 
 re: fclean all
 
