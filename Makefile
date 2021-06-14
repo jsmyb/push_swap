@@ -40,7 +40,7 @@ all: ${NAME}
 
 $(NAME): $(OBJS_COMMON) $(OBJS_SORTER)
 			${CC} $(CFLAGS) -I$(INCLUDE) -o $(NAME) $(OBJS_COMMON) $(OBJS_SORTER)
-			@echo "$(GREEN) $@	done! $(RESET)"
+			@echo "$(GREEN)	done! $(RESET)"
 
 clean:
 			${RM} ${OBJS_COMMON} ${OBJS_SORTER}
