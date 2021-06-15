@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: lsoghomo <lsoghomo@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2021/06/15 15:59:33 by lsoghomo          #+#    #+#              #
+#    Updated: 2021/06/15 15:59:34 by lsoghomo         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 SRC_COMMON = 	./src/common/actions/action1.c \
 				./src/common/actions/action2.c \
 				./src/common/actions/action3.c \
